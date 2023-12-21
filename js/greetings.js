@@ -9,7 +9,6 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 function printGreetings(x) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${x}`;
-  logout.classList.remove(HIDDEN_CLASSNAME);
 }
 function onLoginSubmit(event) {
   event.preventDefault(); //prevent browsers default behavior
