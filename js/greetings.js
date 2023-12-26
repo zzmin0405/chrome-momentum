@@ -34,3 +34,4 @@ function onLogoutSubmit() {
   greeting.classList.add(HIDDEN_CLASSNAME);
   logout.classList.add(HIDDEN_CLASSNAME);
 }
+logout.addEventListener("submit", onLogoutSubmit);

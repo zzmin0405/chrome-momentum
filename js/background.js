@@ -7,3 +7,5 @@ const image = document.createElement("img");
 image.src = `img/${randomimg}`;
 
 document.body.appendChild(image);
+
+function randomImggenerate() {}
