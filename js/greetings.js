@@ -24,14 +24,15 @@ loginForm.addEventListener("submit", onLoginSubmit);
 if (savedUsername == null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   logout.classList.add(HIDDEN_CLASSNAME);
-  loginForm.addEventListener.add("submit", onLoginSubmit);
+  loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   printGreetings(savedUsername);
 }
-function onLogoutSubmit() {
-  localStorage.removeItem(USERNAME_KEY);
-  loginForm.classList.remove(HIDDEN_CLASSNAME);
-  greeting.classList.add(HIDDEN_CLASSNAME);
+function onLogout() {
   logout.classList.add(HIDDEN_CLASSNAME);
+  localStorage.removeItem(USERNAME_KEY);
+  todoLists.classList.add(HIDDEN_CLASSNAME);
+  localStorage.removeItem(todoLists);
+  window.location.reload();
 }
-logout.addEventListener("submit", onLogoutSubmit);
+logout.addEventListener("click", onLogout);
