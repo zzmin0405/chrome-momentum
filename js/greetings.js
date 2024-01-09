@@ -32,7 +32,7 @@ function onLogout() {
   logout.classList.add(HIDDEN_CLASSNAME);
   localStorage.removeItem(USERNAME_KEY);
   todoLists.classList.add(HIDDEN_CLASSNAME);
-  localStorage.removeItem(todoLists);
+  localStorage.removeItem(TODOS_KEY);
   window.location.reload();
 }
 logout.addEventListener("click", onLogout);

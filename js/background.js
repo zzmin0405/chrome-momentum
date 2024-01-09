@@ -1,11 +1,10 @@
-const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+const url = `https://bing.biturl.top`;
 
-const randomimg = images[Math.floor(Math.random() * images.length)];
-
-const image = document.createElement("img");
-
-image.src = `img/${randomimg}`;
-
-document.body.appendChild(image);
-
-function randomImggenerate() {}
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const imageUrl = data.url;
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    document.body.appendChild(image);
+  });
