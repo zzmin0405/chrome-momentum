@@ -9,7 +9,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 function printGreetings(x) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello ${x}`;
+  greeting.innerText = `안녕하세요! ${x}님`;
   todoLists.classList.remove(HIDDEN_CLASSNAME);
   logout.classList.remove(HIDDEN_CLASSNAME);
 }
