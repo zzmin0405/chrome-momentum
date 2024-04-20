@@ -69,6 +69,8 @@ input[type="submit"] {
   transition: 0.5s ease-in-out;
 }
 .logout-button:hover {
+  cursor: pointer;
+
   background-color: #ff6347;
   transition: 0.5s ease-in-out;
 }
