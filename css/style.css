@@ -66,9 +66,12 @@ input[type="submit"] {
 .logout-button {
   border: none;
   border-radius: 10px;
+  background-color: #f75639;
+
   transition: 0.5s ease-in-out;
 }
 .logout-button:hover {
+  cursor: pointer;
   background-color: #ff6347;
   transition: 0.5s ease-in-out;
 }
@@ -109,7 +112,7 @@ input[type="text"] {
 }
 
 #greeting {
-  margin: 0px 40%;
+  margin: 0px 30%;
   font-family: sans-serif;
   font-size: 28px;
   color: #242424;
@@ -122,6 +125,7 @@ input[type="text"] {
 }
 
 #todo-list {
+  display: flexbox;
   list-style-type: none;
   padding: 0;
 }
@@ -130,16 +134,21 @@ input[type="text"] {
   padding: 10px;
   margin: 5px;
 }
+#todo-list li span{
+}
 #todo-list li button {
-  background-color: #ff6347; /* Tomato color */
+  background-color: rgba(0,0,0,0); /* Darker Tomato color on hover */
+
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  transition: 0.5s ease-in-out;
+
 }
 #todo-list li button:hover {
-  background-color: #cc4b39; /* Darker Tomato color on hover */
+  background-color: rgba(0,0,0,0); /* Darker Tomato color on hover */
   transition: 0.5s ease-in-out;
 }
 /* Quote and Weather styles */
@@ -167,7 +176,7 @@ span {
   }
 }
 #weather {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 5px 10px;
   border-radius: 10px;
   opacity: 0.5;
@@ -175,4 +184,7 @@ span {
 .weather-span {
   opacity: 1;
   font-weight: 700;
+}
+.quote-div{
+  background-color:rgba(255, 255, 255, 0.5); 
 }
