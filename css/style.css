@@ -67,7 +67,6 @@ input[type="submit"] {
   border: none;
   border-radius: 10px;
   background-color: #f75639;
-
   transition: 0.5s ease-in-out;
 }
 .logout-button:hover {
