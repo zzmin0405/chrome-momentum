@@ -66,11 +66,12 @@ input[type="submit"] {
 .logout-button {
   border: none;
   border-radius: 10px;
+  background-color: #f19483;
+
   transition: 0.5s ease-in-out;
 }
 .logout-button:hover {
   cursor: pointer;
-
   background-color: #ff6347;
   transition: 0.5s ease-in-out;
 }
@@ -133,15 +134,18 @@ input[type="text"] {
   margin: 5px;
 }
 #todo-list li button {
-  background-color: #ff6347; /* Tomato color */
+  background-color: rgba(0,0,0,0); /* Darker Tomato color on hover */
+
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  transition: 0.5s ease-in-out;
+
 }
 #todo-list li button:hover {
-  background-color: #cc4b39; /* Darker Tomato color on hover */
+  background-color: rgba(0,0,0,0); /* Darker Tomato color on hover */
   transition: 0.5s ease-in-out;
 }
 /* Quote and Weather styles */
